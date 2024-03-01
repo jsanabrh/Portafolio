@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fafafa ;
+}
+
+body{
+    background-color: #000000;
+    min-height: 200vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 10000;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background-color: #fafafa;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 19px;
+    text-decoration: none;
+    color: #fafafa;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+header.sticky .logo{
+    color: #000000;
+}
+
+header.sticky ul li a{
+    color: #000000;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(/IMGS/bannerImg.jpeg);
+    background-size: cover;
+}
+
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 70px 50px 0 50px;
+}
+
+.aboutMe :first-child{
+    padding: 0 50px;
+}
+
+.aboutMe :first-child img{
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #fafafa;
+}
+
+.aboutMe :nth-child(2){
+    padding: 25px;
+}
+
+.aboutMe :nth-child(2) h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+.aboutMe :nth-child(2) p{
+    margin: 0;
+    padding: 0 150px;
+    font-size: 20px;
+}
+
+.projects{
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.projects .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.projects .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projects .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.projects .card h4{
+    font-weight: 600;
+}
+
+.projects .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.projects .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #fafafa;
+    border: 1px solid white;
+}
