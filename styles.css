@@ -61,6 +61,10 @@ header ul li a{
     transition: 0.6s;
 }
 
+header ul li a:hover{
+    border-bottom: 1px solid white;
+}
+
 header.sticky .logo{
     color: #000000;
 }
@@ -69,12 +73,76 @@ header.sticky ul li a{
     color: #000000;
 }
 
-.banner{
-    position: relative;
-    width: 100%;
+header.sticky ul li a:hover{
+    border-bottom: 1px solid #000000;
+}
+
+.slider{
+    width: 1300px;
+    max-width: 100vw;
     height: 100vh;
-    background: url(/IMGS/bannerImg.jpeg);
-    background-size: cover;
+    margin: auto;
+    position: relative;
+}
+
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+.list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+.dots{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.dots li.active{
+    width: 30px;
 }
 
 .aboutMe{
