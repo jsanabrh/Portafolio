@@ -189,17 +189,30 @@ header.sticky ul li a:hover{
 /* Skills Styles */
 
 #skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
+}
+
+.containerSkills{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: #fafafa;
     align-items: center;
-    padding: 0 auto;
 }
 
 .skill{
     width: 250px;
-    height: 300px;
-    border: 1px solid white;
+    height: 350px;
+    text-align: center;
+    margin: 60px;
 }
+
+.skill img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Projects Styles */
