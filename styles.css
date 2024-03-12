@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fafafa ;
 }
 
 body{
@@ -23,6 +22,7 @@ header{
     transition: 0.6s;
     padding: 40px 100px;
     z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 header.sticky{
@@ -153,6 +153,7 @@ header.sticky ul li a:hover{
     padding: 5%;
     align-items: center;
     justify-content: space-around;
+    color: #fafafa;
 }
 
 #aboutMe .aboutMeImg{
@@ -186,3 +187,19 @@ header.sticky ul li a:hover{
 }
 
 /* Skills Styles */
+
+#skills{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #fafafa;
+    align-items: center;
+    padding: 0 auto;
+}
+
+.skill{
+    width: 250px;
+    height: 300px;
+    border: 1px solid white;
+}
